@@ -7,6 +7,15 @@ document.querySelector('#search-btn').onclick = () =>{
     navbar.classList.remove('active');
 }
 
+let cart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    cart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
 let loginForm = document.querySelector('.login-form');
 
 document.querySelector('#login-btn').onclick = () =>{
@@ -31,7 +40,6 @@ window.onscroll = () =>{
     loginForm.classList.remove('active');
     navbar.classList.remove('active');
 }
-
 
 let slides = document.querySelectorAll('.home .slides-container .slide');
 let index = 0;
